@@ -1,3 +1,3 @@
 name = input("What your name?:" )
 
-print("Whatt zupp", name)
+print("Whatt zupp man", name)
