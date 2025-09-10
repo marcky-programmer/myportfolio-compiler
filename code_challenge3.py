@@ -3,7 +3,7 @@ print("from Lucena to Sariaya is 20 pero merong student discount".upper())
 isStudent = input("Are you a student? (yes or no) ---> ")
 
 if isStudent.lower() == "yes":
-    print("Congratsn your eligible for student discount", name)
+    print("Congrats your eligible for student discount", name)
     fare = 20 * .2
     new_fare = 20 - fare
     print("Dahil ikaw ay student ang babayaran mo nalang ay", new_fare)
