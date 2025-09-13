@@ -1,6 +1,6 @@
 temp = input("Enter a temperature --> ")
 
-if temp.isnumeric:
+if temp.isnumeric() :
     if eval(temp) <= 0:
         print("The temperature is consider Below Freezing")
     elif eval(temp) >= 1 and eval(temp) <= 15:

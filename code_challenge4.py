@@ -82,7 +82,7 @@ elif genre.lower() == "adventure":
         elif decades.lower() == "2020s":
             print("We recommend : \n\t\t\"Black Cover\"")
             print("ENJOY READING")
-else:
+else :
     print("Ivalid Genre")
 
 
