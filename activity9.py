@@ -9,7 +9,7 @@ print("1.", (a < b) and (c < d))
 e = 7
 f = 24
 
-g = 45
+g = 45 
 h = 73
 
 print("2.", (e > f) or (g < h))

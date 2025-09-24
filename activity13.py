@@ -5,4 +5,4 @@ for i in range(1,11,1):
     number = eval(input("Enter a amount --> "))
     sum += number
 
-print("The sum of number that you enter is", sum)
+print("The sum of number that you enter is", sum) 

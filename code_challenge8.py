@@ -4,5 +4,5 @@ print("\nMultiplication table for:", number)
 for i in range(1,11,1):
     answer = i * number
     print(number,"x", i,"=",answer)
-
+ 
    

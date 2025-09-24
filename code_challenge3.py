@@ -12,3 +12,4 @@ if isStudent.lower() == "yes":
     print("Your change is", sukli)
 else:
     print("Sorry, your not eligible for student discount", name, ":<")
+ 

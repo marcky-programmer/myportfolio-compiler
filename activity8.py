@@ -6,4 +6,4 @@ print(a < b)
 c = 10
 d = 7
 
-print(c < d) 
+print(c < d)  

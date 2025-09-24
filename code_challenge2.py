@@ -5,7 +5,7 @@ print("Herei is a breakdown of the deposit amount:  ")
 a = 1000
 b = 500
 c = 200  
-d = 100
+d = 100 
 e = 50
 f = 20
 g = 10

@@ -4,7 +4,7 @@ n2 = eval(input("Enter the second number : "))
 s = n1 + n2
 d = n1 - n2
 p = n1 * n2
-q = n1 / n2
+q = n1 / n2 
 
 print("\nThe sum of", n1, "and" ,n2, "is",s)
 print("The difference of" ,n1, "and" ,n2, "is" ,d)
