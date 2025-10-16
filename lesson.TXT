@@ -1,5 +1,0 @@
-syntax(code patter)
-
-loop
- for variable_x in range(Start,stop,step)
-       --> code black
