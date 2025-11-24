@@ -13,7 +13,8 @@ while True:
     print("D - delete student record")
     print("E - edit student record")
     print("F -  export student record")
-    print("G - exit system")
+    print("G - import student record")
+    print("X. exit the system")
 
     choice = input("select from the option-->").lower()
 
@@ -122,11 +123,23 @@ while True:
         print("EXPORT STUDNET DATA")
 
         #json java script object notation
-
+        #w = write
         with open('student_records.json', 'w') as new_file:
             json.dump(student_record,new_file, indent=4)
         continue
     elif choice == "g":
+        os.system('cls')
+        print("EXPORT STUDNET DATA")
+
+        #json java script object notation
+        #r = read
+        with open('student_records.json', 'r') as new_file:
+            imported_student = json.load(new_file)
+        
+        student_record = imported_student 
+        print('\n\nDATA IMPORTED TO JSON')
+        continue
+    elif choice == 'x':
         pass
         continue
     else:
