@@ -28,9 +28,11 @@ if explore == 'yes':
         choice = input('Select from the option above: ').lower()
         os.system('cls')
 
+        #print statement
         if choice == 'a':
             print('\t\t\t-|PRINT STATEMENT|-')
             print('\nA print statement in a program is used to display variables, objects, \nor text to the output device (screen). In Python, the print() statement is \ncommonly used for displaying messages on the screen. ')
+            
             while True:
                 example = input('\nDo you want an example on how it is work? YES or NO--> ').lower()
 
@@ -43,10 +45,10 @@ if explore == 'yes':
                     if gagawin == 'yes':
                             user_input = input('Input a phrases or word here --> ')
                             print(f'The output is: \n{user_input}')
+                        #
+                            # do_you = input('\nDo you want to continue exploring the print statement? YES or NO.\nNote: If you choose No, you will be automatically returned to the main menu. --> ').lower()
+                            # os.system('cls')
                         
-                            do_you = input('\nDo you want to continue exploring the print statement? YES or NO.\nNote: If you choose No, you will be automatically returned to the main menu. --> ').lower()
-                            os.system('cls')
-
                             if do_you == 'yes':
                                 while True:
                                     print('PRINT FUNCTION')
@@ -57,7 +59,9 @@ if explore == 'yes':
                                     print('5. Printing with Formatting')
                                     print('6. Try to Code')
                                     print('7. Back to Main Menu')
+
                                     explore_pri_func = input('Choose the Print Funtion you want to explore/try--> ')
+                                    
                                     if explore_pri_func == '1':
                                         print('\t\tPRINTING TEXT')
                                         print('______________________________________________________________')
@@ -173,10 +177,10 @@ if explore == 'yes':
                                         print('INVALID INPUT, try again')
                                         continue
                             elif do_you == 'no':
-                                 break
+                                break
                             else:
                                 print('INVALID INPUT, try again')
-                                continue
+                                continue  
                     elif gagawin == 'no':
                         break
                     else:
@@ -185,15 +189,15 @@ if explore == 'yes':
                 elif example == 'no':
                     break
                 else:
-                     print('INVALID INPUTp, try again')   
-                     continue    
-            # elif example == 'no':
-            #     print('Related Topics')
-            #     print('VARIABLES')
-            #     print('DATA TYPES')
-            # else:
-                
-            # continue
+                        print('INVALID INPUTp, try again')   
+                        continue    
+        # elif example == 'no':
+        #     print('Related Topics')
+        #     print('VARIABLES')
+        #     print('DATA TYPES')
+        # else:
+            
+        # continue
         elif choice == 'b':
             print('-|VARIABLES|-')
             print('A variable in Python is simply a name that you give to a value\nso you can store is and use it when needed ')
@@ -232,7 +236,7 @@ if explore == 'yes':
             continue
         else:
             print('Invalid input, please try again')
-                             
+                            
 # age = eval(input("enter age: " ))
 
 # if age >= 18:
