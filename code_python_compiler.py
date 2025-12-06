@@ -217,8 +217,7 @@ if explore == 'yes':
                     break
                 else:
                         print('INVALID INPUTp, try again')   
-                        continue    
-        
+                        continue        
         elif choice == 'b':
             print('\t\t\t-|VARIABLES|-')
             print('_______________________________________________________________')
@@ -303,7 +302,7 @@ if explore == 'yes':
                                                     print('____________________________________________')
                                                 
                                                     while True:
-                                                        exit = input('\n Type exit to return to the Strinf Methods Menu--> ').lower().strip()
+                                                        exit = input('\n Type exit to return to the String Methods Menu--> ').lower().strip()
                                                         if exit == 'exit':
                                                             os.system('cls')
                                                             break
@@ -1199,17 +1198,72 @@ if explore == 'yes':
                 print('\nTypes of loop')
                 print('A. for loop')
                 print('B. while loop')
+                print('C. Exit')
                 print('_________________________________________________________________')
 
                 lo = input('Select an option from the above--> ').lower().strip()
                 os.system('cls')
 
                 if lo == 'a':
+                    
+                    print('\t\t-|for loop|-') 
+                    print('__________________________________________________')
+                    print('for loop is a control structure in Python used to\nrepeat a block of code for each item in a sequence,\nsuch as a range of numbers, a list, a string, or \nany iterable object.')
+                    example = input('\nDo you want an example (YES or NO)--> ').lower().strip()
                     while True:
-                        print('\t\t-|for loop|-') 
-                        print('__________________________________________________')
-                        example = input('Do you want an example')
-            continue
+                        if example == 'yes':
+                            print('\nExample:\n\tfor ikot in range(1,11,1):\n\t   print( ikot,"hello world") ')
+                            print('Output:\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world\n\thello world')
+                            print('\nExample:\n\ttotal = 0\n\tfor i in range(1,6):\n\t   total += i\n\tprint("Total",total)')
+                            print('Output:\n\t15')
+                            print('\nExample:\n\tfor i in range(1,11,1):\n\tprint(i, end=" ")')
+                            print('Output:\n\t12345678910')
+                            while True:
+                                exit = input('\n Type exit to return to the Loops Menu--> ').lower().strip()
+                                if exit == 'exit':
+                                    os.system('cls')
+                                    break
+                                else:
+                                    print('INVALID INPUT, try again')
+                                    continue
+                            break
+                        elif example == 'no':
+                            os.system('cls')
+                            break
+                        else:
+                            print('INVALID INPUT, try again ')
+                elif lo == 'b':
+                
+                    print('\t\t-|for loop|-') 
+                    print('__________________________________________________')
+                    print('A while loop repeatedly executes a block of code \nas long as a specified condition is true.')
+                    example = input('Do you want an example (YES or NO)--> ').lower().strip()
+                    while True:
+                        if example == 'yes':
+                            print('\nExample:\n\tcount = 5\n\twhile count > 0:\n\t   print("Countdown:", count)\n\t   count -= 1')
+                            print('Output:\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5')
+                            print('\nExample:\n\tnum = 0\n\twhile num < 10:\t\n   num += 7\n\t   if num == 7:\n\t\t  print("Reached 7,stopping.")\n\t\t  break\n\t   if num % 2 == 0:\n\t\t  continue\n\t   print("Number:", num)')
+                            print('Output:\n\tNumber: 1\n\tNumber: 3\n\tNumber: 5\n\nReached 7, stopping.')
+                            while True:
+                                exit = input('\n Type exit to return to the Loops Menu--> ').lower().strip()
+                                if exit == 'exit':
+                                    os.system('cls')
+                                    break
+                                else:
+                                    print('INVALID INPUT, try again')
+                                    continue
+                            break
+                        elif example == 'no':
+                            os.system('cls')
+                            break
+                        else:
+                            print('INVALID INPUT,try again')
+                            continue
+                elif lo == 'c':
+                    break
+                else:
+                    print('INVALID INPUT, try again')
+                    continue     
         elif choice == 'f':
             pass
             continue
