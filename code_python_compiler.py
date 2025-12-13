@@ -26,7 +26,8 @@ while True:
             print('E. Loops ')
             print('F. List ')
             print('G. Function ')
-            print('H. Exit the system ')
+            print('H. Try to code')
+            print('I. Exit the system ')
             print('________________________________________________________________')
 
 
@@ -230,8 +231,8 @@ while True:
                     if do_you == 'yes':
                         print('__________________________________________________')
                         print('Examples:')
-                        print('\nname = lean ' \
-                        '_activity1\ncode_challenge\nage = input("Type your age--> ")')
+                        print('\nname = "lean"' \
+                        '\nage = eval(input("Type your age--> "))')
                         print('\n\tRelated Topics:')
 
                         print('DATA TYPES')
@@ -334,7 +335,7 @@ while True:
                                                         print('')
                                                         print('\tCapitalizes the first letter' \
                                                         '\nExample:' \
-                                                        '\t\n\"marc".capitalize()' \
+                                                        '\n\t\"marc".capitalize()' \
                                                         '\nOuput:' \
                                                         '\n\tMarc')
                                                         print('___________________________________________________')
@@ -353,7 +354,7 @@ while True:
                                                         '\n\nExample:' \
                                                         '\n\t"lean marc g alcala".title()' \
                                                         '\nOuput:' \
-                                                        '\n\tLean Mard G Alcala')
+                                                        '\n\tLean Marc G Alcala')
                                                         print('________________________________________________')
                                                         while True:
                                                             exit = input('\n Type exit to return to the String Method Menu. ').lower()
@@ -404,10 +405,11 @@ while True:
 
                                     if example == 'yes':
                                         print('\nExample:')
-                                        print('\tprint(123)\n\tname = -456\t\n789')
+                                        print('\tprint(123)\n\tname = -456\n\t789')
                                         print('________________________________________________')
                                         
                                         exit = input('\nType exit to return to the print Data Types menu. ').lower()
+                                        os.system('cls')
                                         while True:
                                             if exit == 'exit':
                                                 break
@@ -422,26 +424,29 @@ while True:
                                 elif _data_types == '3':
                                     print('\t\t-|FLOAT|-')
                                     print('______________________________________________')
-                                    print('a data type in used to represent numbers with\n decimal points (fractional numbers) 3.14,\t-.011, or 2.0.')
+                                    print('a data type in used to represent numbers with\n decimal points (fractional numbers) 3.14,\n-0.11, or 2.0.')
 
                                     example = input('Do you want an example (YES or NO)--> ').lower()
 
                                     if example == 'yes':
                                         print('\nExample:')
-                                        print('\tprint(1.23)\n\tnumber = -0.0456\t\n10.0')
+                                        print('\tprint(1.23)\n\tnumber = -0.0456\n\t10.0')
                                         print('______________________________________________')
 
-                                        exit = input('\n Type exit to return to the print Data Types menu. ').lower()
-                                        if exit == 'exit':
-                                            break
-                                        else:
-                                            print('INVALID INPUT, try again')
-                                            continue
+                                        exit = input('\nType exit to return to the print Data Types menu. ').lower()
+                                        os.system('cls')
+                                        while True:
+                                            if exit == 'exit':
+                                                break
+                                            else:
+                                                print('INVALID INPUT, try again')
+                                                continue
 
                                     elif example == 'no':
                                         break
                                     else:
                                         print('INVALID INPUT, try again')
+                                        continue
                                 elif _data_types == '4':
                                     print('\t\t-|BOOLEAN|-')
                                     print('______________________________________________')
@@ -457,12 +462,14 @@ while True:
                                         print('______________________________________________')
 
                 
-                                        exit = input('\n Type exit to return to the print Data Types menu. ').lower()
-                                        if exit == 'exit':
-                                            break
-                                        else:
-                                            print('INVALID INPUT, try again')
-                                            continue
+                                        exit = input('\nType exit to return to the print Data Types menu. ').lower()
+                                        os.system('cls')
+                                        while True:
+                                            if exit == 'exit':
+                                                break
+                                            else:
+                                                print('INVALID INPUT, try again')
+                                                continue
 
                                     elif example == 'no':
                                         break
@@ -488,12 +495,14 @@ while True:
                                         print('\n\tstudent["section"]="A"')
                                         print('Output:\n\t{"name": "Lean", "age": 18, "section": "A"}')
                                         print('_________________________________________________________')
-                                        exit = input('\n Type exit to return to the print Data Types menu. ').lower()
-                                        if exit == 'exit':
-                                            break
-                                        else:
-                                            print('INVALID INPUT, try again')
-                                            continue
+                                        exit = input('\nType exit to return to the print Data Types menu. ').lower()
+                                        os.system('cls')
+                                        while True:
+                                            if exit == 'exit':
+                                                break
+                                            else:
+                                                print('INVALID INPUT, try again')
+                                                continue
 
                                     elif example == 'no':
                                         break
@@ -618,7 +627,7 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 6\n\tb = 3\n\tc = 2')
-                                        print('\n\total = a - b\n\ttotals = a - b - c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('\n\ttotal = a - b\n\ttotals = a - b - c\n\n\tprint(total)\n\tprint(totals)')
                                         print('Output:\n\t3\n\t1')
                                         print('_____________________________________') 
                                         while True:
@@ -647,7 +656,7 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 6\n\tb = 3\n\tc = 2')
-                                        print('\n\total = a * b\n\ttotals = a * b * c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('\n\ttotal = a * b\n\ttotals = a * b * c\n\n\tprint(total)\n\tprint(totals)')
                                         print('Output:\n\t18\n\t36')
                                         print('_____________________________________') 
                                         while True:
@@ -676,8 +685,8 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 12\n\tb = 3\n\tc = 2')
-                                        print('\n\total = a / b\n\ttotals = a / b / c\n\n\tprint(total)\n\tprint(totals)')
-                                        print('Output:\n\t4\n\t1.3')
+                                        print('\n\ttotal = a / b\n\ttotals = a / b / c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('Output:\n\t4.0\n\t1.3')
                                         print('_____________________________________') 
                                         while True:
                                             exit = input('\n Type exit to return to the Arithmetic Operators--> ').lower().strip()
@@ -705,7 +714,7 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 12\n\tb = 3\n\tc = 2')
-                                        print('\n\total = a // b\n\ttotals = a * b * c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('\n\ttotal = a // b\n\ttotals = a // b // c\n\n\tprint(total)\n\tprint(totals)')
                                         print('Output:\n\t4\n\t1')
                                         print('_____________________________________') 
                                         while True:
@@ -728,7 +737,7 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 12\n\tb = 3\n\tc = 5')
-                                        print('\n\total = a "%" b\n\ttotals = a "%" c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('\n\ttotal = a "%" b\n\ttotals = a "%" c\n\n\tprint(total)\n\tprint(totals)')
                                         print('Output:\n\t0\n\t4')
                                         print('_____________________________________') 
                                         while True:
@@ -751,7 +760,7 @@ while True:
                                     if example == 'yes':
                                         print('Example:')
                                         print('\ta = 12\n\tb = 3\n\tc = 5')
-                                        print('\n\total = a ** b\n\ttotals = a ** c\n\n\tprint(total)\n\tprint(totals)')
+                                        print('\n\ttotal = a ** b\n\ttotals = a ** c\n\n\tprint(total)\n\tprint(totals)')
                                         print('Output:\n\t1728\n\t248832')
                                         print('_____________________________________') 
                                         while True:
@@ -902,7 +911,7 @@ while True:
                                     print('Modulus a value and stores the result \nin the same variable.')
 
                                     print('Example:\n\tx = 5\n\tx %= 6')
-                                    print('Output:\n\t6')
+                                    print('Output:\n\t83')
                                     print('_________________________________')
                                     while True:
                                         exit = input('\n Type exit to return to the Arithmetic Operators--> ').lower().strip()
@@ -941,7 +950,7 @@ while True:
                         while True:
                             print('\t\t-|RELATIONAL OPERATOR|-')
                             print('____________________________________________________________')
-                            print('Relational operators are also called comparison operators.\tThey conpare two values and always return True or False.')
+                            print('Relational operators are also called comparison operators.\nThey conpare two values and always return True or False.')
                             print('A. == (Equal To)')
                             print('B. != (Not Equal To)')
                             print('C. > (Greater Than)')
@@ -1007,7 +1016,7 @@ while True:
                                     print('\t\t-|LESS THAN|-')
                                     print('__________________________________________')
                                     print('Checks if the value on the left is less \nthan the value on the right.')
-                                    print('Example:\n\tprint(4 < 4)\n\tprint(6 < 2)\n\tprint(4 < 5)\nOutput:\n\tFalse\n\tTrue\n\tFalse')
+                                    print('Example:\n\tprint(4 < 4)\n\tprint(6 < 2)\n\tprint(4 < 5)\nOutput:\n\tFalse\n\tFalse\n\tTrue')
                                     print('__________________________________________')
                                     while True:
                                         exit = input('\n Type exit to return to the Arithmetic Operators--> ').lower().strip()
@@ -1189,7 +1198,7 @@ while True:
                             print('_______________________________________________________')
                             print(' Checks multiple conditions in sequence.The first True\ncondition\'s block is executed, and the rest are skipped.')
                             print('Example:\
-                                \n\tx = 5\n\tif x > 5:\n\t\tprint("x is greater than 5")\n\telif x == 5\n\t\tprint("x is exactly 5")\n\telse:\n\t\tprint("x is less than 5")')
+                                \n\tx = 5\n\tif x > 5:\n\t\tprint("x is greater than 5")\n\telif x == 5:\n\t\tprint("x is exactly 5")\n\telse:\n\t\tprint("x is less than 5")')
                             print('Output:\n\tx is exactly 5')
                             while True:
                                 exit = input('\n Type exit to return to the Conditionals Menu--> ').lower().strip()
@@ -1267,16 +1276,14 @@ while True:
                                 print('INVALID INPUT, try again ')
                     elif lo == 'b':
                     
-                        print('\t\t-|for loop|-') 
+                        print('\t\t-|while loop|-') 
                         print('__________________________________________________')
                         print('A while loop repeatedly executes a block of code \nas long as a specified condition is true.')
                         example = input('Do you want an example (YES or NO)--> ').lower().strip()
                         while True:
                             if example == 'yes':
                                 print('\nExample:\n\tcount = 5\n\twhile count > 0:\n\t   print("Countdown:", count)\n\t   count -= 1')
-                                print('Output:\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5\n\tCountdown: 5')
-                                print('\nExample:\n\tnum = 0\n\twhile num < 10:\t\n   num += 7\n\t   if num == 7:\n\t\t  print("Reached 7,stopping.")\n\t\t  break\n\t   if num % 2 == 0:\n\t\t  continue\n\t   print("Number:", num)')
-                                print('Output:\n\tNumber: 1\n\tNumber: 3\n\tNumber: 5\n\nReached 7, stopping.')
+                                print('Output:\n\tCountdown: 5\n\tCountdown: 4\n\tCountdown: 3\n\tCountdown: 2\n\tCountdown: 1')
                                 while True:
                                     exit = input('\n Type exit to return to the Loops Menu--> ').lower().strip()
                                     if exit == 'exit':
@@ -1543,6 +1550,37 @@ while True:
                             continue
                     break
             elif choice == 'h':
+                print('\t\t-|TRY IT WITH YOURSELF|-')
+                print('______________________________________________')
+                print('Type your Python Code. After that,\nType RUN to the nextline to execute the code.')
+                print('______________________________________________')
+                collection_code = []
+
+                while True:
+                    lines = input('>>> ') or input( )
+                    if lines.strip().upper() == 'RUN':
+                        break
+                    collection_code.append(lines)
+                code = '\n'.join(collection_code)
+
+
+                print('\nOutput:')
+                try:
+                    exec(code)
+                except Exception as e:
+                    print("error:", e)
+
+                print('\n--|End code|--')
+            
+                while True:
+                    exit = input('\n Type exit to return to the Main  menu. ').lower()
+                    os.system('cls')
+                    if exit == 'exit':
+                        break
+                    else:
+                        print('INVALID INPUT, try again')
+                        continue
+            elif choice == 'i':
                 break
             else:
                 print('Invalid input, please try again')
