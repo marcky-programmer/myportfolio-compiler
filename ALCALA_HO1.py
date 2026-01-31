@@ -12,9 +12,9 @@ def word_Length_vs_Number_Average():
     print(box)
     print(f'The length of the word is {haba}')
     print(f'The average of the number is {total}')
-    if haba == average:
+    if haba == total:
         print(f'The length of the word "{name}" is equal to the average.')
-    elif haba > average:
+    elif haba > total:
         print(f'The length of the word "{name}" is greater than the average.')
     else:
         print(f'The length of the word "{name}" is less than the average.')
