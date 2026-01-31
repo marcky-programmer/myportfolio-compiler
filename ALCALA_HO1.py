@@ -8,9 +8,10 @@ def word_Length_vs_Number_Average():
         number = eval(input(f'Enter a number {i} : '))
         average += number
         box.append(number)
+        total = average / haba
     print(box)
     print(f'The length of the word is {haba}')
-    print(f'The average of the number is {average}')
+    print(f'The average of the number is {total}')
     if haba == average:
         print(f'The length of the word "{name}" is equal to the average.')
     elif haba > average:
